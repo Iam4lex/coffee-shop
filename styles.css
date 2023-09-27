@@ -253,24 +253,13 @@
           margin-right: -20px;
      }
 
-     /* .main-container{
-          height: 80vh;
-          display: flex;
-     }
-
-     .main-container{
-          text-align: center;
-          display: block;
-          justify-content: center;
-          align-items: center;
-          margin: auto;
-          margin-left: 0;
-          left: 0;
-     } */
-
      .content h1{
           font-size: 50px;
           position: relative;
+     }
+
+     .content h2{
+          font-size: 20px;
      }
 
 }
