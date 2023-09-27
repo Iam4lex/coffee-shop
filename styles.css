@@ -113,6 +113,26 @@
 }
 
 
+@media screen and (max-width: 660px) {
+     .logo h2{
+          color: #fff;
+          font-size: 18px;
+          font-family: sans-serif;
+          margin: -40px 0 0 50px;
+     }
+
+     .lnk{
+          display: none;
+     }
+
+     .bar-container{
+          margin-right: 40px;
+          margin-left: 0;
+     }
+     
+}
+
+
 /* The section that uses javascript to display navbar */
 .navbar__menu{
      display: flex;
@@ -239,6 +259,37 @@
      background: #554343;
 }
 
+@media screen and (max-width: 660px) {
+     .main-container{
+          width: 100%;
+          height: 60vh;
+     }
+
+     #search{
+          width: 300px;
+          margin-left: 20px;
+          margin-top: -200px;
+     }
+
+     .inner-menu span{
+          margin-top: -550px;
+          margin-left: 250px;
+     }
+
+     .navbar__menu.active{
+          width: 350px;
+          height: 50vh;
+     }
+
+     .inner-menu{
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 200px;
+     }
+}
+
 /* MOBILE RESPONSIVENESS OF THE HERO SECTION  */
 
 @media screen and (max-width: 960px) {
@@ -263,32 +314,6 @@
      }
 
 }
-
-.image{
-     width: 400px;
-     height: 400px;
-     float: right;
-     margin-right: 50px;
-     margin-top: 10em;
-     position: relative;
-     border-radius: 50%;
-     animation-direction: normal;
-     animation: animate 3s linear 1s 1 ;
-}
-
-
-/* @keyframes animate {
-     0%{
-          transform: rotate(0deg);
-     }
-
-     100%{
-          transform: rotate(360deg);
-     }
-} */
-
-/* DRINKS & FOODS SECTION */
-
 
 #drinks-section{
      width: 100%;
@@ -333,8 +358,19 @@
      justify-content: center;
 }
 
+@media screen and (max-width: 660px) {
+     #drinks-section{
+          width: 100%;
+          height: 310vh;
+          background-color: rgb(255, 255, 255);
+          display: flex;
+          text-align: center;
+     } 
+     
+}
+
 .images{
-     width: 300px;
+     width: 00px;
      height: 300px;
      padding-bottom: 40px;
      background: #fff;
@@ -344,10 +380,12 @@
      transition: .5s;
 }
 
-/* .images:hover{
-     width: 310px;
-     margin: 0;
-} */
+@media screen and (min-width: 660px) {
+     .images{
+          width: 200px;
+     }
+}
+
 
 .images-content{
      margin: -35px 7px;
@@ -376,9 +414,7 @@ hr{
 
 @media screen and (max-width: 960px) {
      #drinks-section{
-          height: 450vh;
-          /* position: absolute; */
-          /* background: rebeccapurple; */
+          /* height: 450vh; */
           display: flex;
      }
 
@@ -387,15 +423,23 @@ hr{
      }
 
      .image-inner-container .images{
-          width: 400px;
+          width: 350px;
      }
 
      .images-content h3{
-       margin-left: 2em;
+       margin-left: 1em;
        display: flex;
        justify-content: space-between;
        gap: 2em;
      }     
+}
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 660px) {
+     #food-section{
+          height: 310vh;
+     }
 }
 
 /* ABOUT US SECTION  */
@@ -479,7 +523,7 @@ hr{
 
 @media screen and (max-width: 960px) {
      #about-section{
-          height: 220vh;
+          height: 160vh;
      }
 
      .about-content{
@@ -488,6 +532,21 @@ hr{
           width: 80%;
           font-size: 20px;
           left: 20px;
+     }
+
+     .about-content .about-btn{
+          display: flex;
+          flex-direction: row;
+          position: absolute;
+     }
+
+     .booking-btn{
+          margin-left: 9em;
+          margin-right: 0;
+     }
+
+     .coffee-container{
+          margin-left: -50px;
      }
 
 }
@@ -558,13 +617,14 @@ hr{
 
 @media screen and (max-width:960px) {
      #custommers-section{
-          height: 310vh;
+          height: 220vh;
           position: relative;
      }
 
      .card{
-          width: 400px;
-          height: 350px;
+          width: 360px;
+          height: 380px;
+          margin-bottom: -50px;
      }
 
      .card h1{
@@ -574,7 +634,7 @@ hr{
      }
 
      .card h4{
-          margin-top: 300px;
+          margin-top: 330px;
      }
 }
 
@@ -695,7 +755,7 @@ svg{
 @media screen and (max-width: 960px) {
      
      #footer-section{
-          height: 220vh;
+          height: 160vh;
           justify-content: center;
           padding-top: 20px;
      }
